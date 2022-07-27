@@ -1,0 +1,22 @@
+{
+  "name": "js211-marvel",
+  "version": "1.0.0",
+  "description": "npm init\r npm install dotenv --save\r require('dotenv').config() at the top of your main.js\r create a .gitignore file in the root folder\r add .env to the .gitignore file\r create a .env in the root folder and save your API key in it by...\r adding something like SECRET_KEY=abcd1234 to the .env file\r git add commit push...\r Now clone it to your partner's machine\r Repeat the .env file process so each of you have a copy of the API key\r Work in separate branches (be careful of merge conflicts)\r Focus on functionality first\r Only style after you have all the functionality working\r The projects can become a final project if you like. You can continue building them on your own or together. In class, however, we are just going to focus on accessing the API and doing a few simple things with the data we get back.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfranco3/JS211-Marvel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfranco3/JS211-Marvel/issues"
+  },
+  "homepage": "https://github.com/jfranco3/JS211-Marvel#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}

@@ -1,0 +1,5 @@
+# Dont include .env in Github repo
+.env
+
+# 
+node_modules
