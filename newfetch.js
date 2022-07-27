@@ -28,29 +28,3 @@ characterArray.map((post, index) => {
     allCharacters.append(img);
   });
 }
-
-
-
-
-
-//replace this API with whatever mines says to do
-//fn log results in browsers windown
-//fn creates elements insise all-posts ul, then append text inside it with
-
-
-// const displayPost = () => {
-//   const allPosts = document.getElementById("all-characters");
-//   arrayOfCharacters.map((post, index) => {
-//     console.log("index", index, "post", post);
-//     const li = document.createElement("li");
-//     const img = document.createElement("img");
-//     img.src = `${post.thumbnail.path}.${post.thumbnail.extension}`;
-//     //  img.src = post.thumbnail.path + "." + post.thumbnail.extension   same as the line above
-//     const text = document.createTextNode(`#${index}, Title: ${post.name}:`);
-//     li.appendChild(text);
-//     allPosts.append(li);
-//     allPosts.append(img);
-//   });
-// };
-
-// displayPost();
