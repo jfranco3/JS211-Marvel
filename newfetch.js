@@ -30,7 +30,7 @@ const displayCharacters = (array) => {
   });
 };
 
-//declare 2 diff arrays. call display character fn on each array
+//declare empty haveCharArray. set charArr to include characters i want. set timeout to run code after previous code.
 let haveCharacterArray= [];
 setTimeout(() => {
     haveCharacterArray = [
@@ -41,6 +41,7 @@ setTimeout(() => {
   console.log("HAVE CHARACTERS", haveCharacterArray);
 }, 500);
 
+//declare empty wantCharArr. use.find to return characters i want. use.push to bring character into wantCharArr. 
 const wantCharacterArray = [];
 setTimeout(() => {
   wantCharacterArray.push(
