@@ -13,18 +13,45 @@ const fetchCharacterArray = () => {
     .then(() => console.log("LOOK HERE", characterArray));
 };
 
-const displayCharacters = () => {
+const displayCharacters = (array) => {
   const allCharacters = document.getElementById("character-storage");
 
-characterArray.map((post, index) => {
+  array.map((post, index) => {
     console.log("INDEX", index, "POST", post);
     const li = document.createElement("li");
     const img = document.createElement("img");
     img.src = `${post.thumbnail.path}.${post.thumbnail.extension}`;
     //  img.src = post.thumbnail.path + "." + post.thumbnail.extension   same as the line above
+    img.style="height: 200px"
     const text = document.createTextNode(`#${index}, Title: ${post.name}:`);
     li.appendChild(text);
     allCharacters.append(li);
     allCharacters.append(img);
   });
-}
+};
+
+//declare 2 diff arrays. call display character fn on each array
+let haveCharacterArray= [];
+setTimeout(() => {
+    haveCharacterArray = [
+    characterArray[0],
+    characterArray[1],
+    characterArray[2],
+  ];
+  console.log("HAVE CHARACTERS", haveCharacterArray);
+}, 500);
+
+const wantCharacterArray = [];
+setTimeout(() => {
+  wantCharacterArray.push(
+    characterArray.find((element) => element.name === "Absorbing Man")
+  );
+  console.log("WANT CHARACTERS", wantCharacterArray[0].name);
+}, 500);
+
+setTimeout(() => {
+  wantCharacterArray.push(
+    characterArray.find((element) => element.name === "Adam Destine")
+  );
+  console.log("WANT CHARACTERS", wantCharacterArray[1].name);
+}, 500);
