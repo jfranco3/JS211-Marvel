@@ -61,27 +61,32 @@ setTimeout(() => {
 
 //UNIT TESTING for:
 // Mistyped address
-
+// fetch("http://gateway.marvel.com/v1/public/characters?ts=1&apikey=db401cbffb2d9a1c358139e1a6df779d&hash=6ba2c16b46abe80e68ff52b6fcf92520&limit=10")
+// .then(
+//   resp => resp.json() // this returns a promise
+// ).then(x => {
+//   for (x) {
+//   }
+// })
 
 
 // Out of range request
-const fetchBooks = async () => {
-  try {
-      const response: Response = await fetch(
-        "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=db401cbffb2d9a1c358139e1a6df779d&hash=6ba2c16b46abe80e68ff52b6fcf92520&limit=10"
-          {headers: {'Content-Type': 'application/json'}, method: "GET"});
+// const fetchBooks = async () => {
+//   try {
+//       const response: Response = await fetch(
+//         "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=db401cbffb2d9a1c358139e1a6df779d&hash=6ba2c16b46abe80e68ff52b6fcf92520&limit=10")
 
-      if (response.status === 10) {
-          set(await response.json());
-          setErrorMessage(undefined);
-      } else if (response.status === 404) {
-          setErrorMessage('The server could not find this page.');
-      } else {
-          setErrorMessage('The server did not respond the data we wanted.');
-      }
-  } catch (cause) {
-      setErrorMessage('We were unable not retrieve anything due to connection problems.');
-  }
-};
+//       if (response.status === 10) {
+//           set(await response.json());
+//           setErrorMessage(undefined);
+//       } else if (response.status === 404) {
+//           setErrorMessage('The server could not find this page.');
+//       } else {
+//           setErrorMessage('The server did not respond the data we wanted.');
+//       }
+//   } catch (cause) {
+//       setErrorMessage('We were unable not retrieve anything due to connection problems.');
+//   }
+// };
 
 // Wrong API key
