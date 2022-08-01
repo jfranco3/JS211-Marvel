@@ -56,3 +56,16 @@ setTimeout(() => {
   );
   console.log("WANT CHARACTERS", wantCharacterArray[1].name);
 }, 500);
+
+
+
+//UNIT TESTING for:
+// Mistyped address
+
+
+
+// Out of range request
+
+
+
+// Wrong API key
